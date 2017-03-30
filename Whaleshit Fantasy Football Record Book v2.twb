@@ -7,484 +7,11 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Whaleshit Fantasy Record Book' inline='true' name='federated.1byque10ot3r1x145yjs40ettkfr' version='10.2'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.0hp58xd0cmf2y619uvf7n0vjxd3r'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Whaleshit-Fantasy-Football/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.0hp58xd0cmf2y619uvf7n0vjxd3r' name='All Time Regular Season Stats' table='[&apos;All Time Regular Season Stats$&apos;]' type='table'>
-          <columns gridOrigin='A1:K49:no:A1:K49:0' header='yes' outcome='6'>
-            <column datatype='integer' name='Final Standings' ordinal='0' />
-            <column datatype='string' name='Team' ordinal='1' />
-            <column datatype='string' name='Team Name' ordinal='2' />
-            <column datatype='integer' name='Year' ordinal='3' />
-            <column datatype='integer' name='Wins' ordinal='4' />
-            <column datatype='integer' name='Losses' ordinal='5' />
-            <column datatype='integer' name='Ties' ordinal='6' />
-            <column datatype='real' name='Win %' ordinal='7' />
-            <column datatype='real' name='Points For' ordinal='8' />
-            <column datatype='real' name='Points Against' ordinal='9' />
-            <column datatype='real' name='Point Diff' ordinal='10' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Final Standings</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Final Standings]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Final Standings</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Team</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team Name]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Team Name</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Wins</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Wins]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Wins</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Losses</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Losses]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Losses</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Ties</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Ties]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Ties</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Win %</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Win %]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Win %</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Points For</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Points For]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Points For</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Points Against</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Points Against]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Points Against</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Point Diff</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Point Diff]</local-name>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias>Point Diff</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[All Time Regular Season Stats]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:K49:no:A1:K49:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Total Win %' datatype='real' name='[Calculation_851461863831367680]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='SUM([Wins])/(SUM([Wins])+SUM([Losses])+SUM([Ties]))' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[Final Standings]' role='dimension' type='ordinal' />
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.407407' measure-ordering='alphabetic' measure-percentage='0.592593' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-    </datasource>
-    <datasource caption='Best Regular Season Records (Whaleshit Fantasy Record Book)' inline='true' name='federated.0bg15nz1ru721l1glikoc1o6on31' version='10.2'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.07tfom40tnmu5c10cd92f10s7cnd'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Whaleshit-Fantasy-Football/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.07tfom40tnmu5c10cd92f10s7cnd' name='Best Regular Season Records' table='[&apos;Best Regular Season Records$&apos;]' type='table'>
-          <columns gridOrigin='A1:F8:no:A1:F8:0' header='yes' outcome='6'>
-            <column datatype='integer' name='Rank' ordinal='0' />
-            <column datatype='string' name='Team' ordinal='1' />
-            <column datatype='string' name='Team Name' ordinal='2' />
-            <column datatype='integer' name='Year' ordinal='3' />
-            <column datatype='integer' name='Wins' ordinal='4' />
-            <column datatype='integer' name='Losses' ordinal='5' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Rank</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Rank]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Rank</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Team</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team Name]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Team Name</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Wins</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Wins]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Wins</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Losses</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Losses]</local-name>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias>Losses</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Best Regular Season Records]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:F8:no:A1:F8:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.521538' measure-ordering='alphabetic' measure-percentage='0.478462' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-    </datasource>
-    <datasource caption='Worst Regular Season Records (Whaleshit Fantasy Record Book)' inline='true' name='federated.0n03f7z177ab3r1c9s9nq1fesb3c' version='10.2'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.040euo40z3tgch1e4506h0w36dzc'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Whaleshit-Fantasy-Football/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.040euo40z3tgch1e4506h0w36dzc' name='Worst Regular Season Records' table='[&apos;Worst Regular Season Records$&apos;]' type='table'>
-          <columns gridOrigin='A1:F5:no:A1:F5:0' header='yes' outcome='6'>
-            <column datatype='integer' name='Rank' ordinal='0' />
-            <column datatype='string' name='Team' ordinal='1' />
-            <column datatype='string' name='Team Name' ordinal='2' />
-            <column datatype='integer' name='Year' ordinal='3' />
-            <column datatype='integer' name='Wins' ordinal='4' />
-            <column datatype='integer' name='Losses' ordinal='5' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Rank</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Rank]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Rank</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Team</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Team Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Team Name]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Team Name</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Wins</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Wins]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Wins</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Losses</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Losses]</local-name>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias>Losses</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Worst Regular Season Records]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:F5:no:A1:F5:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.519231' measure-ordering='alphabetic' measure-percentage='0.480769' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-    </datasource>
     <datasource caption='Rajiva Bowl Winners (Whaleshit Fantasy Record Book)' inline='true' name='federated.14zzbj30le2tdn14f759c16mvtr0' version='10.2'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.10wep7i0rdw1pn1d9a3dv0f8affw'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Whaleshit-Fantasy-Football/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Personal-Dashboards/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <relation connection='excel-direct.10wep7i0rdw1pn1d9a3dv0f8affw' name='Rajiva Bowl Winners' table='[&apos;Rajiva Bowl Winners$&apos;]' type='table'>
@@ -765,6 +292,479 @@
           </encoding>
         </style-rule>
       </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Best Regular Season Records (Whaleshit Fantasy Record Book)' inline='true' name='federated.0bg15nz1ru721l1glikoc1o6on31' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.07tfom40tnmu5c10cd92f10s7cnd'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Whaleshit-Fantasy-Football/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.07tfom40tnmu5c10cd92f10s7cnd' name='Best Regular Season Records' table='[&apos;Best Regular Season Records$&apos;]' type='table'>
+          <columns gridOrigin='A1:F8:no:A1:F8:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='string' name='Team Name' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='integer' name='Wins' ordinal='4' />
+            <column datatype='integer' name='Losses' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team Name]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Team Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wins]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Wins</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Losses]</local-name>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias>Losses</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Best Regular Season Records]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F8:no:A1:F8:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52' measure-ordering='alphabetic' measure-percentage='0.48' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Whaleshit Fantasy Record Book' inline='true' name='federated.1byque10ot3r1x145yjs40ettkfr' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.0hp58xd0cmf2y619uvf7n0vjxd3r'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Personal-Dashboards/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hp58xd0cmf2y619uvf7n0vjxd3r' name='All Time Regular Season Stats' table='[&apos;All Time Regular Season Stats$&apos;]' type='table'>
+          <columns gridOrigin='A1:K49:no:A1:K49:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Final Standings' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='string' name='Team Name' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='integer' name='Wins' ordinal='4' />
+            <column datatype='integer' name='Losses' ordinal='5' />
+            <column datatype='integer' name='Ties' ordinal='6' />
+            <column datatype='real' name='Win %' ordinal='7' />
+            <column datatype='real' name='Points For' ordinal='8' />
+            <column datatype='real' name='Points Against' ordinal='9' />
+            <column datatype='real' name='Point Diff' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Final Standings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Final Standings]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Final Standings</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team Name]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Team Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wins]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Wins</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Losses]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Losses</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ties]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Ties</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Win %]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Win %</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points For</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Points For]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Points For</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points Against</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Points Against]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Points Against</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Point Diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Point Diff]</local-name>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias>Point Diff</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[All Time Regular Season Stats]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K49:no:A1:K49:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Win %' datatype='real' name='[Calculation_851461863831367680]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Wins])/(SUM([Wins])+SUM([Losses])+SUM([Ties]))' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Final Standings]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.4' measure-ordering='alphabetic' measure-percentage='0.6' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Worst Regular Season Records (Whaleshit Fantasy Record Book)' inline='true' name='federated.0n03f7z177ab3r1c9s9nq1fesb3c' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Whaleshit Fantasy Record Book' name='excel-direct.040euo40z3tgch1e4506h0w36dzc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ochang/Documents/GitHub/Personal-Dashboards/Whaleshit Fantasy Record Book.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.040euo40z3tgch1e4506h0w36dzc' name='Worst Regular Season Records' table='[&apos;Worst Regular Season Records$&apos;]' type='table'>
+          <columns gridOrigin='A1:F5:no:A1:F5:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='string' name='Team Name' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='integer' name='Wins' ordinal='4' />
+            <column datatype='integer' name='Losses' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team Name]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Team Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wins]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Wins</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Losses]</local-name>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias>Losses</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Worst Regular Season Records]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F5:no:A1:F5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52' measure-ordering='alphabetic' measure-percentage='0.48' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
